@@ -16,9 +16,11 @@ import scipy.misc
 from matplotlib.pyplot import imshow
 from utils import *
 
-import keras.backend as K
-K.set_image_data_format('channels_last')
-K.set_learning_phase(1)
+from tensorflow.python.keras import backend as k
+# from tensorflow.keras import backend as K
+# import keras.backend as K
+# K.set_image_data_format('channels_last')
+# K.set_learning_phase(1)
 
 
 def main():
@@ -51,3 +53,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
